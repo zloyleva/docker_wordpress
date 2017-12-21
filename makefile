@@ -1,5 +1,5 @@
-docker_name = wordpresdocker_web_1
-docker_image = wordpresdocker_web
+docker_name = dockerwordpress_web_1
+docker_image = dockerwordpress_web
 
 help: #prints list of commands
 	@cat ./makefile | grep : | grep -v "grep"

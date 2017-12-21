@@ -1,3 +1,3 @@
-![alt text](https://github.com/zloyleva/docker_wordpress/master/docker-wordpress.png)
+![alt text](https://github.com/zloyleva/docker_wordpress/blob/master/docker-wordpress.png)
 
 # Wordpress + Docker

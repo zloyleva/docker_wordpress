@@ -12,3 +12,22 @@ $ sudo apt-get update
 $ sudo apt-get install curl
 ``` 
 
+Install Docker
+
+[Docker install link](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package)
+
+Install Docker-Compose
+
+[Docker-Compose link](https://docs.docker.com/compose/install/#install-compose)
+
+## Create Docker Image
+
+```
+$ make install
+```
+
+## Install WordPress
+
+```
+$ make install_wordpress
+```

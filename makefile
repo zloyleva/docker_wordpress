@@ -10,6 +10,9 @@ install: #start docker container #
 install_wordpress: #update vendors
 	@sudo docker exec -it $(docker_name) bash -c 'wget -c http://wordpress.org/latest.tar.gz && tar -xzvf latest.tar.gz && rsync -av wordpress/* ./public/ && rm latest.tar.gz && rm -rf wordpress/ && cp ./wp-config.php ./public/wp-config.php && cp .htaccess ./public/.htaccess && chmod -R 777 .'
 
+copy_theme: # Copy Theme to project
+	@sudo docker exec -it $(docker_name) bash -c 'cp -r ./materials/LearnTheme/ ./public/wp-content/themes/LearnTheme/ && chmod -R 777 .'
+
 lara_mix: #create Laravel Mix and install all dependencies
 	@sudo docker exec -it $(docker_name) bash -c 'cp ./.npm-init.js ~/.npm-init.js && npm set init.author.name "zloyleva" && npm init -y && npm install laravel-mix --save-dev && chmod -R 777 .'
 

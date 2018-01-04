@@ -14,6 +14,8 @@ let mix = require('laravel-mix');
 mix.js('./materials/scrips/app.js', './public/wp-content/themes/LearnTheme/scripts/app.js')
    .sass('./materials/sass/style.scss', './public/wp-content/themes/LearnTheme/css/style.css');
 
+mix.copy('./materials/LearnTheme/*.php','./public/wp-content/themes/LearnTheme/');
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.

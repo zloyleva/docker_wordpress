@@ -1,6 +1,8 @@
 <footer class="container">
-    <div class="divider">
-        <h4 class="text-center">First site</h4>
+    <div class="row">
+        <h4 class="text-center">First site on WordPress</h4>
+        <hr>
+        <p class="text-center">2017-<?= date('Y')?> &copy; 2LevelUp</p>
     </div>
 </footer>
 

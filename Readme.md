@@ -31,3 +31,17 @@ $ make install
 ```
 $ make install_wordpress
 ```
+
+## Copy WordPress theme
+
+```
+$ make copy_theme
+```
+
+## JS Dependencies
+jQuery
+Bootstrap
+```
+npm install jquery
+npm install bootstrap@3
+```

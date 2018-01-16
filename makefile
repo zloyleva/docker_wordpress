@@ -14,7 +14,7 @@ copy_theme: # Copy Theme to project
 	@sudo docker exec -it $(docker_name) bash -c 'cp -r ./materials/LearnTheme/ ./public/wp-content/themes/LearnTheme/ && chmod -R 777 .'
 
 lara_mix: #create Laravel Mix and install all dependencies
-	@sudo docker exec -it $(docker_name) bash -c 'cp ./.npm-init.js ~/.npm-init.js && npm set init.author.name "zloyleva" && npm init -y && npm install laravel-mix --save-dev && chmod -R 777 .'
+	@sudo docker exec -it $(docker_name) bash -c 'cp ./.npm-init.js ~/.npm-init.js && npm set init.author.name "zloyleva" && npm init -y && npm install laravel-mix --save-dev && npm i jquery && npm i bootstrap@3 && chmod -R 777 .'
 
 start: #start docker container #
 	@sudo docker-compose up -d
